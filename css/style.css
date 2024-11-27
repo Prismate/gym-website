@@ -15,7 +15,7 @@
 }
 
 *::selection{
-    background:var(--purple);
+    background: var(--purple);
     color: white;
 }
 
@@ -59,8 +59,8 @@ html{
 .heading{
     display: inline-block;
     color:#333;
-    margin:2rem 0;
-    padding:1rem 0;
+    margin: 2rem 0;
+    padding: 1rem 0;
     padding-top: 8rem;
     font-size: 3rem;
     border-bottom: .2rem solid var(--purple);
@@ -83,7 +83,7 @@ header .logo{
 }
 
 header .logo span{
-    color:var(--purple);
+    color: var(--purple);
 }
 
 header .navbar ul{
@@ -94,7 +94,7 @@ header .navbar ul{
 }
 
 header .navbar ul li{
-    margin:0 1rem;
+    margin: 0 1rem;
 }
 
 header .navbar ul li a{
@@ -199,25 +199,25 @@ header.header-active .navbar a{
 }
 
 .service .box-container .box{
-    height:25rem;
-    width:38rem;
-    margin:1rem;
+    height: 25rem;
+    width: 38rem;
+    margin: 1rem;
     overflow: hidden;
     position: relative;
     cursor: pointer;
 }
 
 .service .box-container .box img{
-    height:100%;
-    width:100%;
+    height: 100%;
+    width: 100%;
     object-fit: cover;
 }
 
 .service .box-container .box .info{
-    height:90%;
-    width:90%;
+    height: 90%;
+    width: 90%;
     position: absolute;
-    top:50%; left:50%;
+    top: 50%; left: 50%;
     transform: translate(-50%, -50%) scale(0);
     background:#fff;
     display: flex;
@@ -238,7 +238,7 @@ header.header-active .navbar a{
 .service .box-container .box .info p{
     font-size: 1.2rem;
     color:#666;
-    padding:1rem 2rem;
+    padding: 1rem 2rem;
 }
 
 .trainer{
@@ -259,17 +259,17 @@ header.header-active .navbar a{
 }
 
 .trainer .box-container .box{
-    height:40rem;
-    margin:1.5rem 1rem;
-    width:27rem;
-    border:.5rem solid var(--purple);
+    height: 40rem;
+    margin: 1.5rem 1rem;
+    width: 27rem;
+    border: .5rem solid var(--purple);
     overflow: hidden;
     position: relative;
     box-shadow: 0 .3rem .5rem #000;
 }
 
 .trainer .box-container .box img{
-    height:100%;
+    height: 100%;
     width: 100%;
     object-fit: cover;
 }
@@ -277,40 +277,170 @@ header.header-active .navbar a{
 .trainer .box-container .box .info{
     color:#333;
     background:#fff;
-    border-top:.5rem solid var(--purple);
+    border-top: .5rem solid var(--purple);
     position: absolute;
     bottom: 0; left: 0;
     font-size: 2rem;
-    width:100%;
-    padding:1rem 0;
+    width: 100%;
+    padding: 1rem 0;
 }
 
 .trainer .box-container .box .share{
     position: absolute;
-    top:1rem; right: -100%;
+    top: 1rem; right: -100%;
     display: flex;
     flex-flow: column;
 }
 
 .trainer .box-container .box:hover .share{
-    right:0;
+    right: 0;
 }
 
 .trainer .box-container .box .share a{
-    height:4rem;
-    width:4.5rem;
+    height: 4rem;
+    width: 4.5rem;
     line-height: 4rem;
     color:#333;
     font-size: 2rem;
     background:#fff;
-    margin:.5rem 1rem;
+    margin: .5rem 1rem;
 }
 
 .trainer .box-container .box .share a:hover{
-    background:var(--purple);
+    background: var(--purple);
     color:#fff;
 }
 
+.plan{
+    min-height: 100vh;
+    text-align: center;
+    background:#eee;
+}
+
+.plan .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.plan .box-container .box{
+    background:#fff;
+    margin: 2rem;
+    width: 30rem;
+    box-shadow: 0 .3rem .5rem rgba(0,0,0,.3);
+}
+
+.plan .box-container .box:hover{
+    transform: scale(1.04);
+}
+
+.plan .box-container .box .title{
+    font-size: 2.5rem;
+    background: var(--purple);
+    color:#fff;
+    padding: 1rem 0;
+}
+
+.plan .box-container .box .price{
+    font-size: 4rem;
+    color:#333;
+    padding-top: 1rem;
+}
+
+.plan .box-container .box .price span{
+    font-size: 2rem;
+}
+
+.plan .box-container .box .month{
+    font-size: 2rem;
+    color:#666;
+}
+
+.plan .box-container .box ul{
+    margin: 2rem 8rem;
+    list-style: none;
+}
+
+.plan .box-container .box ul li{
+    text-align: left;
+    padding:.5rem 0;
+    font-size: 1.5rem;
+    color:#333;
+}
+
+.plan .box-container .box ul li i{
+    color: evar(--purple);
+    padding: 0 .5rem;
+}
+
+.plan .box-container .box .btn{
+    margin-bottom: 3rem;
+}
+
+.register{
+    min-height: 90vh;
+    text-align: center;
+    background:#000;
+    padding-bottom: 3rem;
+}
+
+.register .heading{
+    color:#fff;
+}
+
+.register form{
+    width:75%;
+    margin: 0 auto;
+}
+
+.register form .inputBox{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.register form .inputBox input, textarea{
+    height: 4rem;
+    width: 49%;
+    background:#111;
+    color:#fff;
+    padding: 0 1rem;
+    margin: 1rem 0;
+    font-size: 2rem;
+    border: none;
+}
+
+.register form .inputBox input:focus, textarea:focus{
+    background:#222;
+}
+
+.register form textarea{
+    height:20rem;
+    resize: none;
+    padding: 1rem;
+    width: 100%;
+}
+
+.register form .btn:hover{
+    background:var(--purple);
+}
+
+.footer{
+    color:#eee;
+    background:#111;
+    text-align: center;
+    padding: 2rem 1rem;
+    font-size: 2rem;
+}
+
+.footer a{
+    color:var(--purple);
+}
+
+.footer a:hover{
+    color:#fff;
+}
 
 
 
@@ -345,7 +475,7 @@ header.header-active .navbar a{
     }
 
     header .navbar ul li a{
-        font-size: 2.5 rem;
+        font-size: 2.5rem;
         color: #333;
         display: block;
     }
