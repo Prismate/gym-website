@@ -56,6 +56,16 @@ html{
     color:white;
 }
 
+.heading{
+    display: inline-block;
+    color:#333;
+    margin:2rem 0;
+    padding:1rem 0;
+    padding-top: 8rem;
+    font-size: 3rem;
+    border-bottom: .2rem solid var(--purple);
+}
+
 header{
     width: 100%;
     display: flex;
@@ -176,6 +186,60 @@ header.header-active .navbar a{
     padding: 1rem 0;
 }
 
+.service{
+    min-height: 100vh;
+    text-align: center;
+}
+
+.service .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.service .box-container .box{
+    height:23rem;
+    width:38rem;
+    margin:1rem;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+
+.service .box-container .box img{
+    height:100%;
+    width:100%;
+    object-fit: cover;
+}
+
+.service .box-container .box .info{
+    height:90%;
+    width:90%;
+    position: absolute;
+    top:50%; left:50%;
+    transform: translate(-50%, -50%) scale(0);
+    background:#fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+}
+
+.service .box-container .box:hover .info{
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.service .box-container .box .info h3{
+    font-size: 2.5rem;
+    color:#333;
+}
+
+.service .box-container .box .info p{
+    font-size: 1.2rem;
+    color:#666;
+    padding:1rem 2rem;
+}
 
 
 
